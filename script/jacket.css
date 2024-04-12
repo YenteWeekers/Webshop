@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.Img_jacket{
+    display: grid;
+    grid-template-columns: 821px 527px;
+    grid-template-areas: "foto content";
+}
+.img_con{
+    display: flex;
+    margin: 20px 0 0 180px;
+    grid-area: foto;
+}
+/* The grid: Four equal columns that floats next to each other */
+.subImg_con {
+    float: left;
+    width: 100px;
+    padding: 0 27px;
+}
+
+.sub_imgCon{
+    display: flex;
+    flex-direction: column;
+    width: 99px;
+}
+/* Style the images inside the grid */
+.sub_img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 67px;
+    height: auto;
+}
+
+.sub_img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.sub_imgCon:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+
+
+
+
+/*jasje*/
+.jasje_content{
+    margin-top: 25px;
+    grid-area: content;
+}
+.jasje_content h2{
+    font-family: "Nunito", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+}
+.jasje_content h4{
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #7e7e7e;
+    margin: 5px 0 35px 0;
+}
+.jasje_content h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #7e7e7e;
+}
+.jasje_content h1{
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.jasje_content p{
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #10AF2C;
+}
+.jasje_content img{
+    margin: 0 4px 0 10px;
+    top: 1px;
+    position: relative;
+}
+.jasje_verzending{
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 30px;
+    background-color: #e3f3e4;
+    margin: 20px 0;
+}
+.maat button {
+    text-decoration: none;
+    border: #e0e0e0 1px solid;
+    border-radius: 25px;
+    background-color: white;
+    width: 75px;
+    height: 32px;
+}
+.jasjeContentLine{
+    border-top: #d9d9d9 dashed 1px;
+    width: 380px;
+    margin-bottom: 40px;
+}
+.addToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: #719667;
+    margin-top: 30px;
+}
+.jasje_content h6{
+    /*font-family: inherit;*/
+    font-family: "Nunito", sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+
+
+/*rating*/
+* {
+    box-sizing: border-box;
+}
+
+.jacket_revieuw {
+    font-family: Arial;
+    margin-left: 161px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.heading_rating {
+    font-size: 20px;
+    margin-right: 25px;
+    color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+.fa {
+    font-size: 13px;
+}
+.revieuw_text{
+    font-size: 15px;
+    color: #656565;
+    font-family: "Nunito", sans-serif;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    margin-top:8px;
+    font-family: "Nunito", sans-serif;
+    width: 20%;
+}
+.side h1{
+    font-weight:bold;
+    font-size: 12px;
+}
+.side h2{
+    width: 40px;
+    font-size: 12px;
+}
+
+.starRevieuw{
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 58px;
+}
+
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 60%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Individual bars */
+.bar-5 {width: 7%;}
+.bar-4 {width: 91%;}
+.bar-3 {width: 2%;}
+
+
+.bar{
+    height: 8px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.shoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.shoes h1{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+}
+
+.shoes h3{
+    font-size: 9px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoes h4{
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoeIMG{
+    width: 262px;
+    height: 340px;
+}
+
+
+

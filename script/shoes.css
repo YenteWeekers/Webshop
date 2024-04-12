@@ -1,0 +1,131 @@
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px 18px 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.collapsible:after {
+    content: '\002B';
+    float: right;
+}
+
+.open:after {
+    content: "\2212";
+}
+
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.filter_bar p{
+    padding: 18px 18px 18px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.shoe_display{
+    display: grid;
+    grid-template-columns: 19vw 79vw;
+    grid-template-areas: "filter shoes";
+}
+
+.filter_bar{
+    grid-area: filter;
+    margin-left: 50px;
+}
+.filterLine{
+    width: 240px;
+    height: 1px;
+    background-color: #f1f1f1;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+.shopHeading{
+    font-size: 13px;
+    font-family: "Nunito", sans-serif;
+    margin: 40px 40px 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+    word-spacing: 7px;
+}
+
+.content label{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+}
+.content input{
+    accent-color: black;
+}
+
+
+
+
+
+.shoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.shoes h1{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+}
+
+.shoes h3{
+    font-size: 9px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoes h4{
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoeIMG{
+    width: 320px;
+    height: 320px;
+}
+
+
+.shoe{
+    display:none;
+}
+
+
+
+.show{
+    display:block;
+}
+
+
+
+

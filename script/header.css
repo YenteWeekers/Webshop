@@ -1,0 +1,225 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    /*background-color: #ededed;*/
+    color: black;
+}
+.headBalk{
+    height: 7vh;
+    background-color: #1e1e1e;
+}
+
+.header{
+    /*position: fixed;*/
+    padding: 20px 110px;
+    display: flex;          /*set the home projects skills about me under Yente.*/
+    justify-content: space-between ;    /*zet yente en rest uitelkaar en zet het op even veel aftand van zijkant als yente dus 10%*/
+    align-items: center;
+    padding-right: 5%;
+    border-bottom: solid 2px #E7E7E7;
+}
+
+
+.logo h1{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.icons{
+    display: flex;
+    width: 125px;
+    gap: 15px;
+}
+.icons img{
+    width: 25px;
+    height: 25px;
+}
+.zoekBalkHeader{
+    width: 819px;
+    height: 40px;
+    display: flex;
+}
+.zoekBalk{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    color: #7B7B7B;
+    border: #EAEAEA 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+.zoekBalkHeader img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 35px;
+    top: 20%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Mitr', sans-serif;
+}
+
+.navbar a:hover,      /* als je er met muis overheen gaat krijg je die kleur */
+.navbar a.active{    /*geef class active en dan dezen blijft aan staan op die kleur */
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+/* mega menu*/
+
+
+/* Dropdown button */
+.navbar_Header{
+    height: 10px;
+    background-color: transparent;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 40px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    background-color: #fdfdfd;
+    height: 350px;
+}
+.column h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style links inside the columns */
+.column a {
+    float: none;
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+    color: #ddd;
+}
+
+.colum_Line{
+    width: 1px;
+    height: 350px;
+    background-color: #c9c9c9;
+    float: right;
+}
+
+
+
+/*best seller*/
+.column img{
+    width: 239px;
+    height: 149px;
+}
+.column.foto{
+    display: flex;
+    gap: 25px;
+}
+.column.foto h4{
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 19px;
+}
+.column.new_rel{
+    width: 13.33%;
+    padding: 10px;
+}
+
+/*others*/
+.column.head a{
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+.colum_Line.wom{
+    margin: 0 50px 0 80px;
+    float: left;
+    height: 300px;
+}
+.column.other h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+}
+.column.other a{
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: normal;
+    padding: 0 94px 0 0;
+}
+
+
+
+
+
+
+/* navbar filter*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+

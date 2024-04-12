@@ -1,0 +1,215 @@
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px 18px 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.collapsible:after {
+    content: "\2212";
+    float: right;
+}
+
+.open:after {
+    content: '\002B';
+}
+
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#filter_bar p{
+    padding: 18px 18px 18px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.shoe_display{
+    display: grid;
+    grid-template-columns: 20vw 78vw;
+    grid-template-areas: "filter shoes";
+}
+
+#filter_bar{
+    grid-area: filter;
+    margin-left: 50px;
+    overflow-y: scroll;
+    max-width: 260px;
+    height: 755px;
+}
+.filterLine{
+    width: 240px;
+    height: 1px;
+    background-color: #f1f1f1;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+.shopHeading{
+    font-size: 13px;
+    font-family: "Nunito", sans-serif;
+    margin: 40px 40px 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+    word-spacing: 7px;
+}
+
+.content label{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+}
+.content input{
+    accent-color: black;
+}
+
+
+
+
+
+.shoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    grid-area: shoes;
+}
+
+.shoes h1{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+}
+
+.shoes h3{
+    font-size: 9px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoes h4{
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+.shoeIMG{
+    width: 262px;
+    height: 340px;
+}
+
+.vrouw{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+
+.hide {
+    display: none;
+}
+
+.shoeIMG:hover + .hide {
+    display: block;
+    color: red;
+    font-size: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 200px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c9c8c8;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b7b7b7;
+}
+
+
+
+
+
+.callout {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    box-shadow: #bebebe 0 1px 17px 0;
+}
+
+.callout-header {
+    padding: 25px 15px 5px 15px;
+    background: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.callout-container {
+    padding: 15px;
+    background-color: #ffffff;
+    color: black
+}
+
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #838383;
+}
+.discount{
+    border: black dashed 2px;
+    padding: 5px 79px;
+    margin: 20px 0;
+}
+.valid{
+    color: #a4a4a4;
+    font-size: 9px;
+}
